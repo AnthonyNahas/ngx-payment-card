@@ -1,6 +1,6 @@
 {
   "name": "ngx-payment-card",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Angular UI component that represents an international payment card",
   "homepage": "https://anthonynahas.github.io/ngx-payment-card/",
   "author": {
