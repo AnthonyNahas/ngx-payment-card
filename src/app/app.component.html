@@ -439,13 +439,40 @@
     <h2>Usage</h2>
 
 
-  <ngx-payment-card></ngx-payment-card>
+    <ngx-payment-card #ngxPaymentCard
+                      [IBAN]="iban?.value"
+                      [cardNumber]="+cNumber?.value"
+                      [securityCode]="sc?.value"
+                      [name]="name?.value">
+    </ngx-payment-card>
+
+    <div fxLayout="column" fxFlex>
+        <mat-form-field appearance="outline">
+            <mat-label>IBAN</mat-label>
+            <input #iban matInput (focus)="ngxPaymentCard.flip(true)">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input #name matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Card Number</mat-label>
+            <input #cNumber matInput type="number" (focus)="ngxPaymentCard.flip(false)">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Security Code</mat-label>
+            <input #sc matInput type="number" (focus)="ngxPaymentCard.flip(false)">
+        </mat-form-field>
+    </div>
 
 
-<!--    <a class="try-me" mat-raised-button color="accent" [href]="this.mailto | mailto">Try me!</a>-->
+    <!--    <a class="try-me" mat-raised-button color="accent" [href]="this.mailto | mailto">Try me!</a>-->
 
 
-<!--    <markdown src="assets/md/e1.md"></markdown>-->
+    <!--    <markdown src="assets/md/e1.md"></markdown>-->
 
     <p>For more info, please read the official readme - see the links above GITHUB - DOCS - NPM</p>
 

@@ -18,7 +18,7 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class FlipCardOnClickDirective implements OnInit, OnChanges, OnDestroy {
 
-  // @Input()
+  @Input()
   flipped!: boolean;
 
   @Input()
@@ -50,7 +50,7 @@ export class FlipCardOnClickDirective implements OnInit, OnChanges, OnDestroy {
   ngOnChanges(changes: SimpleChanges): void {
     console.log('changes on flip card', changes);
     if (changes.flipped && !changes.flipped.firstChange) {
-      // this.handleFlip();
+      this.handleFlip();
     }
   }
 

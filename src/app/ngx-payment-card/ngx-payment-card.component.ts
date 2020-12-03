@@ -1,6 +1,4 @@
-import { ChangeDetectorRef, Component, EventEmitter, Input, OnDestroy, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Component, EventEmitter, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 
 
@@ -13,16 +11,16 @@ export class NgxPaymentCardComponent implements OnInit, OnDestroy {
 
 
   @Input()
-  IBAN!: string;
+  IBAN!: string | undefined;
 
   @Input()
-  name!: string;
+  name!: string | undefined;
 
   @Input()
   expirationDate!: Date;
 
   @Input()
-  securityCode!: number;
+  securityCode!: number | undefined;
 
   @Input()
   cardNumber!: number;
@@ -53,9 +51,7 @@ export class NgxPaymentCardComponent implements OnInit, OnDestroy {
 
   // https://codepen.io/quinlo/pen/YONMEa
 
-  constructor(private formBuilder: FormBuilder,
-              private matSnackBar: MatSnackBar,
-              private ref: ChangeDetectorRef) {
+  constructor() {
     // Set the private defaults
     this._unsubscribeAll = new Subject();
   }
