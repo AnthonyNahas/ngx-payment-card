@@ -4,9 +4,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxPaymentCardModule } from 'ngx-payment-card';
 
 import { AppComponent } from './app.component';
-import { NgxPaymentCardModule } from './ngx-payment-card/ngx-payment-card.module';
 
 @NgModule({
   declarations: [
