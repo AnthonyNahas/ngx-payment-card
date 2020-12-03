@@ -97,7 +97,7 @@ Other modules in your application like for lazy loading import ` NgxPaymentCardM
 
 ## API
 
-
+soon...
 
 
 <a name="usage"/>
