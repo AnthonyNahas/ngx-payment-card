@@ -442,7 +442,7 @@
     <ngx-payment-card #ngxPaymentCard
                       [IBAN]="iban?.value"
                       [cardNumber]="+cNumber?.value"
-                      [securityCode]="sc?.value"
+                      [securityCode]="sc?.value?.toString()"
                       [name]="name?.value">
     </ngx-payment-card>
 

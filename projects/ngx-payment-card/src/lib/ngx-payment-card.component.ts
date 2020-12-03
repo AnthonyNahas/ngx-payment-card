@@ -20,10 +20,10 @@ export class NgxPaymentCardComponent implements OnInit, OnDestroy {
   expirationDate!: Date;
 
   @Input()
-  securityCode!: number | undefined;
+  securityCode!: string | undefined;
 
   @Input()
-  cardNumber!: number;
+  cardNumber!: string |  undefined;
 
   @Input()
     // tslint:disable-next-line:variable-name
