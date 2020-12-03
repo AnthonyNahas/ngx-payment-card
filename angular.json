@@ -175,6 +175,46 @@
           }
         }
       }
+    },
+    "ngx-payment-card": {
+      "projectType": "library",
+      "root": "projects/ngx-payment-card",
+      "sourceRoot": "projects/ngx-payment-card/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-payment-card/tsconfig.lib.json",
+            "project": "projects/ngx-payment-card/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-payment-card/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-payment-card/src/test.ts",
+            "tsConfig": "projects/ngx-payment-card/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-payment-card/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-payment-card/tsconfig.lib.json",
+              "projects/ngx-payment-card/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-payment-card-demo",
