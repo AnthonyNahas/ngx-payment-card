@@ -144,6 +144,7 @@ $ npm start
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
 - [ngx-linkifyjs](https://github.com/AnthonyNahas/ngx-linkifyjs)
+- [ngx-mailto](https://github.com/AnthonyNahas/ngx-mailto)
 - [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
 - [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
 - [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
