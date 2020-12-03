@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FlipCardOnClickDirective } from './directives/flip-card-on-click.directive';
 import { NgxPaymentCardComponent } from './ngx-payment-card.component';
 import { CreditCardNumberFormatterPipe } from './pipes/credit-card-number-formatter.pipe';
-
 
 
 @NgModule({
@@ -13,10 +12,13 @@ import { CreditCardNumberFormatterPipe } from './pipes/credit-card-number-format
     FlipCardOnClickDirective
   ],
   exports: [
-    NgxPaymentCardComponent
+    NgxPaymentCardComponent,
+    CreditCardNumberFormatterPipe,
+    FlipCardOnClickDirective
   ],
   imports: [
     CommonModule
   ]
 })
-export class NgxPaymentCardModule { }
+export class NgxPaymentCardModule {
+}

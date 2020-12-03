@@ -1,17 +1,17 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NgxPaymentCardComponent } from './ngx-payment-card.component';
 
-describe('NgxPaymentCardComponent', () => {
+describe('NgxCreditCardComponent', () => {
   let component: NgxPaymentCardComponent;
   let fixture: ComponentFixture<NgxPaymentCardComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ NgxPaymentCardComponent ]
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [NgxPaymentCardComponent]
     })
-    .compileComponents();
-  });
+      .compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(NgxPaymentCardComponent);
