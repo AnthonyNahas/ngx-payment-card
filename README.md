@@ -1,27 +1,183 @@
-# NgxPaymentCardDemo
+<p align="center">
+  <img alt="angular-material-extensions's logo"
+   height="256px" width="256px" style="text-align: center;" 
+   src="https://cdn.jsdelivr.net/gh/anthonynahas/ngx-payment-card@master/assets/angular-material-extensions-logo.svg">
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+# ngx-payment-card - Angular library simplifying generation of mailto links with Typescript
 
-## Development server
+[![npm version](https://badge.fury.io/js/ngx-payment-card.svg)](https://badge.fury.io/js/ngx-payment-card)
+[![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://anthonynahas.github.io/ngx-payment-card)
+[![docs: typedoc](https://img.shields.io/badge/docs-typedoc-4D0080.svg)](https://anthonynahas.github.io/ngx-payment-card/doc/index.html)
+[![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![license](https://img.shields.io/github/license/anthonynahas/ngx-payment-card.svg?style=flat-square)](https://github.com/AnthonyNahas/ngx-payment-card/blob/master/LICENSE)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+from
 
-## Code scaffolding
+<p align="center">
+  <img alt="ngx-payment-card demonstration" style="text-align: center;"
+   src="https://raw.githubusercontent.com/anthonynahas/ngx-payment-card/HEAD/assets/ex1.gif">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+to -->
 
-## Build
+<p align="center">
+  <img alt="ngx-payment-card demonstration" style="text-align: center;"
+   src="https://raw.githubusercontent.com/anthonynahas/ngx-payment-card/HEAD/assets/ex2.gif">
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Built by and for developers :heart:
+Do you have any question or suggestion ? Please do not hesitate to contact us!
+Alternatively, provide a PR | open an appropriate issue [here](https://github.com/angular-material-extensions/ngx-payment-card/issues)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you like this project, support [angular-material-extensions](https://github.com/angular-material-extensions)
+by starring :star: and sharing it :loudspeaker:
 
-## Running end-to-end tests
+## Table of Contents
+- [Demo](#demo)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [API](#api)
+- [Usage](#usage)
+- [Run Demo App Locally](#run-demo-app-locally)
+- [Other Angular Libraries](#other-angular-libraries)
+- [Support](#support)
+- [License](#license)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<a name="demo"/>
 
-## Further help
+## [Demo](https://anthonynahas.github.io/ngx-payment-card)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+View all the directives and components in action at [https://anthonynahas.github.io/ngx-payment-card](https://anthonynahas.github.io/ngx-payment-card)
+
+---
+
+<a name="dependencies"/>
+
+## Dependencies
+* [Angular](https://angular.io) developed and tested with `11.x`
+
+---
+
+<a name="installation"/>
+
+##  [Installation](https://anthonynahas.github.io/ngx-payment-card/getting-started)
+
+
+## Install via *npm*. (Alternative)
+
+Now install `ngx-payment-card` via:
+```shell
+npm install --save ngx-payment-card
+```
+
+
+### Import the library
+
+If you installed the library via angular schematics, you can skip this step
+
+
+```typescript
+import { NgxPaymentCardModule } from 'ngx-payment-card'; 
+
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgxPaymentCardModule, ...],  
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+```
+
+Other modules in your application like for lazy loading import ` NgxPaymentCardModule ` into your feature module:
+
+
+<a name="api"/>
+
+## API
+
+
+
+
+<a name="usage"/>
+
+## [Usage](https://anthonynahas.github.io/ngx-payment-card)
+
+
+simple
+
+```html
+<ngx-payment-card></ngx-payment-card>
+```
+
+advanced
+
+```html
+<ngx-payment-card #ngxPaymentCard
+                  [IBAN]="iban?.value"
+                  [cardNumber]="+cNumber?.value"
+                  [securityCode]="sc?.value"
+                  [name]="name?.value">
+</ngx-payment-card>
+```
+
+
+<a name="run-demo-app-locally"/>
+
+###  Run Demo App Locally
+
+Build the library
+
+```bash
+$ npm run build:lib
+```
+
+Serve the demo app
+
+```bash
+$ npm start
+```
+
+
+
+## Other Angular Libraries
+- [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
+- [ngx-linkifyjs](https://github.com/AnthonyNahas/ngx-linkifyjs)
+- [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
+- [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
+- [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
+- [@angular-material-extensions/fab-menu](https://github.com/angular-material-extensions/fab-menu)
+- [@angular-material-extensions/select-country](https://github.com/angular-material-extensions/select-country)
+- [@angular-material-extensions/select-icon](https://github.com/angular-material-extensions/select-icon)
+- [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
+- [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
+---
+
+<a name="support"/>
+
+## Support
++ Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de)
++ or open an appropriate [issue](https://github.com/angular-material-extensions/ngx-payment-card/issues)
++ let us chat on [Gitter](https://gitter.im/angular-material-extensions/Lobby)
+
+Built by and for developers :heart: we will help you :punch:
+
+---
+
+![jetbrains logo](https://raw.githubusercontent.com/anthonynahas/ngx-payment-card/HEAD/assets/jetbrains-variant-4_logos/jetbrains-variant-4.png)
+
+This project is supported by [jetbrains](https://www.jetbrains.com/) with 1 ALL PRODUCTS PACK OS LICENSE incl. [webstorm](https://www.jetbrains.com/webstorm)
+
+---
+
+<a name="license"/>
+
+## License
+
+Copyright (c) 2020 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT) <p align="center">
+<img alt="angular-material-extensions's logo"
+height="92px" width="92px" style="text-align: center;"
+src="https://cdn.jsdelivr.net/gh/anthonynahas/ngx-payment-card@master/assets/badge_made-in-germany.svg">
+</p>
+
