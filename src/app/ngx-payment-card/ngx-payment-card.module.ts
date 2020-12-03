@@ -12,6 +12,9 @@ import { CreditCardNumberFormatterPipe } from './pipes/credit-card-number-format
     CreditCardNumberFormatterPipe,
     FlipCardOnClickDirective
   ],
+  exports: [
+    NgxPaymentCardComponent
+  ],
   imports: [
     CommonModule
   ]
