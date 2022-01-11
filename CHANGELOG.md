@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/anthonynahas/ngx-payment-card/compare/1.0.1...2.0.0) (2022-01-11)
+
+
+### Bug Fixes
+
+* **project:** fixed exports issues ([ee46ff0](https://github.com/anthonynahas/ngx-payment-card/commit/ee46ff06c8b1a4abc50482e7cbec5fbd25ec14b7))
+* **project:** updated the deps ([a1d2b36](https://github.com/anthonynahas/ngx-payment-card/commit/a1d2b361642d7b14d8267e8af6bc853538746060))
+* **project:** updated the deps ([75a63d3](https://github.com/anthonynahas/ngx-payment-card/commit/75a63d3182452ef77c777036d3ea7dc2d659a89e))
+* **project:** upgraded angular material to v12 ([a5fd9f8](https://github.com/anthonynahas/ngx-payment-card/commit/a5fd9f89650e5bc1d3eba71e4dfd99ba61e93fbb))
+* **project:** upgraded angular to v13 ([b5d61fb](https://github.com/anthonynahas/ngx-payment-card/commit/b5d61fb4903667aee019ebf8a96ab51713f892b6))
+* **project:** upgraded angular to v13 ([d774294](https://github.com/anthonynahas/ngx-payment-card/commit/d7742943635ed5e2506d7276b2505782d8c04a15))
+* **project:** upgraded angular to v13 ([a1eb2ed](https://github.com/anthonynahas/ngx-payment-card/commit/a1eb2ed6f8cca5578b2771ba8791185c306ee483))
+* **project:** upgraded angular to v13 ([b1f176b](https://github.com/anthonynahas/ngx-payment-card/commit/b1f176b5086ecc9503dc772f4d88272028819c20))
+* **project:** upgraded express engine ([27ded23](https://github.com/anthonynahas/ngx-payment-card/commit/27ded236e2ead83e3749f48b7efc30ac9923fb8a))
+* **project:** upgreaded angular to v12 ([374d4e0](https://github.com/anthonynahas/ngx-payment-card/commit/374d4e0307a490587bfe0a8f032fa5ef1df80d4c))
+
 ## [1.0.1](https://github.com/anthonynahas/ngx-payment-card/compare/1.0.0...1.0.1) (2020-12-03)
 
 ## [1.0.1](https://github.com/anthonynahas/ngx-payment-card/compare/1.0.0...1.0.1) (2020-12-03)
