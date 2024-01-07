@@ -15,8 +15,7 @@
     "serve:ssr": "node dist/ngx-payment-card-demo/server/main.js",
     "build:ssr": "ng build --configuration production && ng run ngx-payment-card-demo:server:production",
     "prerender": "ng run ngx-payment-card-demo:prerender",
-    "prerender:ghpages": "ng run ngx-payment-card-demo:prerender_ghpages",
-    "postinstall": "ngcc"
+    "prerender:ghpages": "ng run ngx-payment-card-demo:prerender_ghpages"
   },
   "private": true,
   "dependencies": {
