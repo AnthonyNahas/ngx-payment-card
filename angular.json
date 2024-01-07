@@ -274,7 +274,6 @@
       }
     }
   },
-  "defaultProject": "ngx-payment-card-demo",
   "cli": {
     "analytics": "816b760f-f9ea-4909-b2ca-96e0153cd4c3"
   }
